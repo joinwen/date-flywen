@@ -6,6 +6,67 @@
 ### Install
 `npm install date-flywen`
 
+### Format Literal
+- **yy**
+  
+  `21`
+
+- **yyyy**
+
+  `2021`
+  
+- **M**
+  
+    `1`
+  
+- **MM**
+  
+    `01`
+  
+- **d**
+    
+    `1`
+  
+- **dd**
+  
+    `01`
+
+- **h**
+  
+    `1`
+  
+- **hh**
+
+    `01`
+  
+- **m**
+
+    `1`
+  
+- **mm**
+
+    `01`
+  
+- **s**
+  
+    `1`
+  
+- **ss**
+
+    `01`
+  
+- **S**
+  
+    `0`
+
+- **SS**
+  
+    `0000`
+
+- **O**
+    
+    `+0800`
+
 ### Usage
 ```
 const dateFlywen = require("date-flywen");

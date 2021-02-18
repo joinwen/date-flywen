@@ -1,4 +1,6 @@
 import { formatFromNumber, formatFromObj } from "./utils";
+import { format } from "./core/format";
+import { parse } from "./core/parse";
 
 function formatDate(obj) {
   if (Object.prototype.toString.call(obj) === "[object Date]") {
@@ -8,4 +10,5 @@ function formatDate(obj) {
     return formatFromNumber(obj);
   }
 }
-export {formatDate};
+
+export { formatDate, format, parse };
