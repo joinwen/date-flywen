@@ -1,7 +1,10 @@
 import { getYear, getMonth, getDate, getHours, getMinutes, getSeconds, getMilliSeconds, getTimeZone } from "../utils/dateGetUtil";
 const DEFAULT_PATTERN = "yyyy-MM-dd hh:mm:ss";
 function format(pattern, date) {
-  pattern = pattern || DEFAULT_PATTERN;
+  if(typeof pattern == "object") {
+    date = pattern;
+    pattern = pattern || DEFAULT_PATTERN;
+  }
   return pattern
     .replace(/yyyy/, getYear(date))
     .replace(/yy/, getYear(date, 2))
