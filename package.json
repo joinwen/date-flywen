@@ -1,6 +1,6 @@
 {
   "name": "date-flywen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a simple date format javascript library",
   "main": "dist/date-flywen.js",
   "module": "src/index.js",
