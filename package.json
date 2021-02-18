@@ -1,0 +1,25 @@
+{
+  "name": "date-flywen",
+  "version": "1.0.0",
+  "description": "a simple date format javascript library",
+  "main": "dist/date-flywen.js",
+  "module": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joinwen/date-flywen.git"
+  },
+  "keywords": [
+    "date",
+    "format",
+    "lib"
+  ],
+  "author": "cywen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joinwen/date-flywen/issues"
+  },
+  "homepage": "https://github.com/joinwen/date-flywen#readme"
+}
