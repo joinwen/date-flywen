@@ -6,6 +6,7 @@ module.exports = {
     filename: "date-flywen.js",
     library: "dateFlywen",
     libraryTarget: "umd",
+    globalObject: "this",
     module: false
   },
   mode: "production"
