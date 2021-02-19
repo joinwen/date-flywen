@@ -67,6 +67,12 @@
     
     `+0800`
 
+
+### Parse
+
+1920-1-27 12:24:24:1234+0800
+
+yyyy-M-dd hh:mm:ss:SSO
 ### Usage
 ```
 const dateFlywen = require("date-flywen");

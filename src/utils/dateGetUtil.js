@@ -16,8 +16,8 @@ const getDate = (date, w) => {
 const getHours = (date, w) => {
   [date, w] = helperOverload(date, w);
   return helperPadZero(date.getHours().toString(), w);
-
 }
+
 const getMinutes = (date, w) => {
   [date, w] = helperOverload(date, w);
   return helperPadZero(date.getMinutes().toString(), w);

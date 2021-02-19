@@ -3,7 +3,14 @@ const DEFAULT_PATTERN = "yyyy-MM-dd hh:mm:ss";
 function format(pattern, date) {
   if(typeof pattern == "object") {
     date = pattern;
-    pattern = pattern || DEFAULT_PATTERN;
+    pattern = DEFAULT_PATTERN;
+  }
+  if(typeof pattern == "undefined") {
+    date = new Date();
+    pattern = DEFAULT_PATTERN;
+  }
+  if(date == null) {
+    date = new Date();
   }
   return pattern
     .replace(/yyyy/, getYear(date))
@@ -18,8 +25,8 @@ function format(pattern, date) {
     .replace(/m/, getMinutes(date))
     .replace(/ss/, getSeconds(date, 2))
     .replace(/s/, getSeconds(date))
-    .replace(/SS/, getSeconds(date,4))
+    .replace(/SS/, getMilliSeconds(date,4))
     .replace(/S/, getMilliSeconds(date))
-    .replace(/O/, getTimeZone(date))
+    .replace(/O/, getTimeZone(date));
 }
 export { format };

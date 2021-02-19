@@ -9,5 +9,6 @@ module.exports = {
     globalObject: "this",
     module: false
   },
-  mode: "production"
+  devtool: "source-map",
+  mode: "development"
 }
